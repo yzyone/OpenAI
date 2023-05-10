@@ -1,6 +1,6 @@
 # 免费！Google Colab现已支持英伟达T4 GPU
 
-![img](./colab\cxplra0wsd.jpeg)
+![img](./colab/cxplra0wsd.jpeg)
 
 ### 
 
@@ -10,7 +10,7 @@
 
 Google Colab是Google内部Jupyter Notebook的交互式Python环境，不需要在本地做多余配置，完全云端运行，存储在GoogleDrive中，可以多人共享，简直跟操作Google Sheets一样简单。之前只提供英伟达Tesla K80，现在已经支持TPU了！英伟达T4 GPU耗能仅为70瓦，是面向现有数据中心基础设施而设计的，可加速AI训练和推理、机器学习、数据分析和虚拟桌面。
 
-![img](./colab\ff6y422cwe.png)
+![img](./colab/ff6y422cwe.png)
 
 运行命令
 
@@ -24,7 +24,7 @@ Google Colab是Google内部Jupyter Notebook的交互式Python环境，不需要�
 
 返回结果
 
-![img](./colab\m05d7hrbnt.jpeg)
+![img](./colab/m05d7hrbnt.jpeg)
 
 有Reddit网友表示Colab TPU比本地GTX 1080Ti的速度**慢了将近2倍**。
 
@@ -36,13 +36,13 @@ https://colab.research.google.com/notebooks/tpu.ipynb#scrollTo=71iSWtsXe36x
 
 Google Colab不需要安装配置Python，并可以在Python 2和Python 3之间快速切换，支持Google全家桶：TensorFlow、BigQuery、GoogleDrive等，支持pip安装任意自定义库，支持apt-get安装依赖。
 
-![img](./colab\upvbs3ypq4.jpeg)
+![img](./colab/upvbs3ypq4.jpeg)
 
 它最大的好处是为广大的AI开发者提供了免费的GPU和TPU，供大家进行机器学习的开发和研究。GPU的型号正是Tesla K80，可以在上面轻松地跑Keras、Tensorflow、Pytorch等框架；最近新增加的TPU是英伟达T4，可以在更广阔的天地大有作为了。
 
 当然还有一个好处：不需要前期环境配置。相信很多人对前期环境配置过程中，遇到的各种奇奇怪怪问题深有体会：Anaconda套件该选择哪个版本？路径没设置好导致Jupyter Notebook调不出来等等。而Google Colab直接配置好一个环境，即插即用。
 
-![img](./colab\j5f1ojxhyp.jpeg)
+![img](./colab/j5f1ojxhyp.jpeg)
 
 Colab的文档使用我们最喜爱的Markdown格式，并且提供预览模式可以直接看到输出文档的最终样式。
 
@@ -56,27 +56,27 @@ https://colab.research.google.com
 
 首先我们需要在Google Drive上新建一个文件夹：
 
-![img](./colab\zyg5ey51wj.jpeg)
+![img](./colab/zyg5ey51wj.jpeg)
 
 然后从下拉菜单里直接进入Colab即可。
 
-![img](./colab\jp4tyyw0dl.jpeg)
+![img](./colab/jp4tyyw0dl.jpeg)
 
 接下来需要做一些简单的配置。比如你可以选择使用Python 2或者3笔记本，然后选择硬件加速器，接下来就可以愉快的敲代码了。
 
 或者你也可以直接wget一个共享的zip包。例如下载并解压Udacity的花朵数据：
 
-![img](./colab\b0cql4becd.png)
+![img](./colab/b0cql4becd.png)
 
 **创建/打开一个笔记本**
 
 在Colab里创建/打开笔记本很简单，直接点击新建/打开即可：
 
-![img](./colab\za74f3gkut.jpeg)
+![img](./colab/za74f3gkut.jpeg)
 
 创建的时候会提示你选择GPU或者TPU。如果你没有选，或者你想给现有的项目更换硬件加速器，那么都可以通过Edit→Notebook Settings，或者Runtime→Change rumtime type重新选择，即时生效。
 
-![img](./colab\ff6y422cwe2.png)
+![img](./colab/ff6y422cwe2.png)
 
 更换硬件加速器类型后，运行以下[代码检查](https://cloud.tencent.com/product/tcap?from=20065&from_column=20065)是否使用了GPU或者TPU：
 
@@ -87,19 +87,19 @@ import device_libdevice_lib.list_local_devices()
 
 复制
 
-![img](./colab\kgiab75rbr.jpeg)
+![img](./colab/kgiab75rbr.jpeg)
 
 如果返回结果中没有GPU或者TPU字样只有CPU字样，那么说明没有使用到二者。
 
-![img](./colab\bukw3f302f.png)
+![img](./colab/bukw3f302f.png)
 
 注意上图里的Github标签，超棒对不对！
 
-![img](./colab\i812jorji3.jpeg)
+![img](./colab/i812jorji3.jpeg)
 
 还有一点需要注意的是，因为Colab运行在云端，所以一定要记住**随时保存**，请把保存按钮当做vim里的esc来对待。
 
-![img](./colab\z6nvgpe47g.jpeg)
+![img](./colab/z6nvgpe47g.jpeg)
 
 当然也可以把文件下载到本地或者上传到云端。
 
@@ -109,37 +109,37 @@ Colab自带Tensorflow、Matplotlib、Numpy、Pandas等深度学习基础库，�
 
 某些库可能需要先安装后才能使用，比如keras：
 
-![img](./colab\5j51frsuua.png)
+![img](./colab/5j51frsuua.png)
 
 安装PyTorch：
 
-![img](./colab\sl2f943i3f.png)
+![img](./colab/sl2f943i3f.png)
 
 除了pip，还支持apt-get。安装OpenCV：
 
-![img](./colab\g5prdhrkgk.png)
+![img](./colab/g5prdhrkgk.png)
 
 安装XGBoost：
 
-![img](./colab\yrq66uxqae.png)
+![img](./colab/yrq66uxqae.png)
 
 有的第三方Python库可能需要依赖Java或是其他软件才能运行，安装过程稍微复杂一点：
 
-![img](./colab\0m294hqs2a.png)
+![img](./colab/0m294hqs2a.png)
 
 注意**--yes**这个小操作很关键，如果没有系统可能会卡住（有兴趣的读者可以尝试一下）。其他软件也类似，注意最后加上**--yes**。
 
 安装有版权的oracle-java-installer，需要有同意协议的操作：
 
-![img](./colab\tci0noonzi.png)
+![img](./colab/tci0noonzi.png)
 
 设置系统默认jdk：
 
-![img](./colab\j0fjfhsac.png)
+![img](./colab/j0fjfhsac.png)
 
 测试Java是否安装成功：
 
-![img](./colab\t061kkqcxh.png)
+![img](./colab/t061kkqcxh.png)
 
 **2个小技巧**
 
@@ -167,7 +167,7 @@ Found GPU at: /device:GPU:0
 
 不顺利的话：
 
-![img](./colab\6rf8aw985m.jpeg)
+![img](./colab/6rf8aw985m.jpeg)
 
 谷歌允许你一次最多持续使用12小时的免费 GPU。
 
@@ -184,7 +184,7 @@ import filesuploaded = files.upload()
 
 之后，我们就会发现单元 cell 下出现了“选择文件”按钮：
 
-![img](./colab\qfwezyw509.png)
+![img](./colab/qfwezyw509.png)
 
 然后就可以直接上传文件了
 
